@@ -4,7 +4,7 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_PASSWORD: password
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: support_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
