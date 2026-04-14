@@ -1,0 +1,9 @@
+[project]
+name = "customer-support-agent"
+version = "0.1.0"
+description = "A customer support agent that answers FAQ's and raises support ticket"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typing-extensions>=4.15.0",
+]
