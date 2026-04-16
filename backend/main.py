@@ -1,10 +1,11 @@
-from src.agent.database import create_db_and_tables
-
+import uvicorn
 
 def main():
-    create_db_and_tables()
-    print("Hello from customer-support-agent!")
-
-
+    uvicorn.run(
+        "src.api.app:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True,
+    )
 if __name__ == "__main__":
     main()
